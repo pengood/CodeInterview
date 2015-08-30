@@ -162,7 +162,14 @@ public class TestUtils {
 		}
 		return ret;
 	}
-
+/*
+ * 					0
+ * 				1		2
+ * 			3		4
+ * 				5		
+ * 			6
+ * 
+ */
 	public static TreeNode createTree() {
 		TreeNode[] treeNodes = new TreeNode[7];
 		for (int i = 0; i < 7; i++) {
@@ -195,6 +202,16 @@ public static TreeNode createBST(){
 			printTreePreOrder(node.left);
 		if (node.right != null)
 			printTreePreOrder(node.right);
+	}
+	
+	public static void printTreeInOrder(TreeNode node){
+		if(node==null)
+			throw new IllegalArgumentException();
+		if(node.left!=null)
+			printTreeInOrder(node.left);
+		System.out.print(node+" ");
+		if(node.right!=null)
+			printTreeInOrder(node.right);
 	}
 
 	public static void main(String[] args) {
