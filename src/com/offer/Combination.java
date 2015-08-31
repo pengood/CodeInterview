@@ -8,7 +8,7 @@ public class Combination {
 		if (chs == null || chs.length == 0) {
 			return;
 		}
-		List<Character> list = new ArrayList();
+		List<Character> list = new ArrayList<Character>();
 		for (int i = 1; i <= chs.length; i++) {
 			combine(chs, 0, i, list);
 		}

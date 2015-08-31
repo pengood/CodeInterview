@@ -10,5 +10,6 @@ public static void main(String[] args) {
 	System.out.println(z);
 	int p=z&(Integer.MAX_VALUE^(1<<(1)));
 	System.out.println(p);
+	System.out.println(1<<100);
 }
 }

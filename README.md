@@ -1,6 +1,5 @@
 # CodeInterview
 <br>
-<br>
 [LeetCode](https://github.com/pengood/CodeInterview/tree/master/src/com/leetcode/test)
 <br>
 [剑指Offer](https://github.com/pengood/CodeInterview/tree/master/src/com/nowcoder/offer)

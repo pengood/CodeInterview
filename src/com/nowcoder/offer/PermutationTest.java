@@ -114,9 +114,9 @@ public class PermutationTest {
 		}
 	}
 	public static void main(String[] args) {
-		String aString="abcd";
+		String aString="cba";
 		PermutationTest test=new PermutationTest();
-		System.out.println(test.Permutation2(aString).size());
+		System.out.println(test.Permutation2(aString));
 		System.out.println();
 	}
 }
