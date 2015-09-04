@@ -42,8 +42,29 @@ public class CoinCountWays {
 	         
 	        return dp[n];
 	 }
+	 int[] coins={1,5,10,25};
+	 public int countWays2(int n){
+		 return helpCount(n, 3);
+		 
+	 }
+	 private int helpCount(int total,int i){
+		 if(total<5||i==0)
+			 return 1;
+		 int result=0;
+		 for(int j=0;j<=total/coins[i];j++){
+			 result+=helpCount(total-j*coins[i], i-1);
+		 }
+		 return result;
+	 }
 	 public static void main(String[] args) {
 		CoinCountWays coinCountWays=new CoinCountWays();
-		System.out.println(coinCountWays.countWays(11));
+		System.out.println(coinCountWays.countWays1(111));
+		System.out.println(coinCountWays.countWays2(111));
+		for(int i=1;i<1000;i++){
+			int a=coinCountWays.countWays1(i);
+			int b=coinCountWays.countWays2(i);
+			if(a!=b)
+				System.out.println("error i:"+i+" a:"+a+" b: "+b);
+		}
 	}
 }
