@@ -59,7 +59,7 @@ public class InversePairsTest {
 	}
 	public static void main(String[] args) {
 		InversePairsTest test=new InversePairsTest();
-		int[] a={4,2,3,1};
+		int[] a={3,2,1};
 		System.out.println(test.InversePairs(a));
 		System.out.println(Arrays.toString(a));
 	}
